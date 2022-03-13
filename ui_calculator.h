@@ -48,7 +48,7 @@ public:
         Calculator->resize(292, 335);
         Calculator->setMaximumSize(QSize(361, 376));
         Calculator->setStyleSheet(QString::fromUtf8("QMainWindow {\n"
-"   background: #2a2a2a;\n"
+"   background: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -67,8 +67,9 @@ public:
         Display->setFont(font);
         Display->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: gray;\n"
+"	color: gray;\n"
 "    border: 1px solid gray;\n"
-"    color: #FFFFFF';\n"
+"    color: gray';\n"
 "}"));
         Display->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         Button1 = new QPushButton(centralwidget);
@@ -77,16 +78,23 @@ public:
         sizePolicy.setHeightForWidth(Button1->sizePolicy().hasHeightForWidth());
         Button1->setSizePolicy(sizePolicy);
         QFont font1;
+        font1.setFamily(QString::fromUtf8("TeX Gyre Adventor"));
         font1.setPointSize(20);
+        font1.setBold(false);
+        font1.setUnderline(false);
+        font1.setWeight(50);
+        font1.setStyleStrategy(QFont::PreferDefault);
         Button1->setFont(font1);
         Button1->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -95,15 +103,19 @@ public:
         Button4->setGeometry(QRect(10, 143, 61, 53));
         sizePolicy.setHeightForWidth(Button4->sizePolicy().hasHeightForWidth());
         Button4->setSizePolicy(sizePolicy);
-        Button4->setFont(font1);
+        QFont font2;
+        font2.setPointSize(20);
+        Button4->setFont(font2);
         Button4->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -112,15 +124,17 @@ public:
         Button7->setGeometry(QRect(10, 206, 61, 53));
         sizePolicy.setHeightForWidth(Button7->sizePolicy().hasHeightForWidth());
         Button7->setSizePolicy(sizePolicy);
-        Button7->setFont(font1);
+        Button7->setFont(font2);
         Button7->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -129,15 +143,17 @@ public:
         Clear->setGeometry(QRect(10, 270, 61, 53));
         sizePolicy.setHeightForWidth(Clear->sizePolicy().hasHeightForWidth());
         Clear->setSizePolicy(sizePolicy);
-        Clear->setFont(font1);
+        Clear->setFont(font2);
         Clear->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -146,15 +162,17 @@ public:
         Button8->setGeometry(QRect(80, 206, 61, 53));
         sizePolicy.setHeightForWidth(Button8->sizePolicy().hasHeightForWidth());
         Button8->setSizePolicy(sizePolicy);
-        Button8->setFont(font1);
+        Button8->setFont(font2);
         Button8->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -163,15 +181,17 @@ public:
         Button5->setGeometry(QRect(80, 143, 61, 53));
         sizePolicy.setHeightForWidth(Button5->sizePolicy().hasHeightForWidth());
         Button5->setSizePolicy(sizePolicy);
-        Button5->setFont(font1);
+        Button5->setFont(font2);
         Button5->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -180,15 +200,17 @@ public:
         Button2->setGeometry(QRect(80, 79, 61, 53));
         sizePolicy.setHeightForWidth(Button2->sizePolicy().hasHeightForWidth());
         Button2->setSizePolicy(sizePolicy);
-        Button2->setFont(font1);
+        Button2->setFont(font2);
         Button2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -197,15 +219,17 @@ public:
         Button0->setGeometry(QRect(80, 270, 61, 53));
         sizePolicy.setHeightForWidth(Button0->sizePolicy().hasHeightForWidth());
         Button0->setSizePolicy(sizePolicy);
-        Button0->setFont(font1);
+        Button0->setFont(font2);
         Button0->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -214,15 +238,17 @@ public:
         Button9->setGeometry(QRect(150, 206, 61, 53));
         sizePolicy.setHeightForWidth(Button9->sizePolicy().hasHeightForWidth());
         Button9->setSizePolicy(sizePolicy);
-        Button9->setFont(font1);
+        Button9->setFont(font2);
         Button9->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -231,15 +257,17 @@ public:
         Button6->setGeometry(QRect(150, 143, 61, 53));
         sizePolicy.setHeightForWidth(Button6->sizePolicy().hasHeightForWidth());
         Button6->setSizePolicy(sizePolicy);
-        Button6->setFont(font1);
+        Button6->setFont(font2);
         Button6->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -248,15 +276,17 @@ public:
         Button3->setGeometry(QRect(150, 79, 61, 53));
         sizePolicy.setHeightForWidth(Button3->sizePolicy().hasHeightForWidth());
         Button3->setSizePolicy(sizePolicy);
-        Button3->setFont(font1);
+        Button3->setFont(font2);
         Button3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -265,15 +295,17 @@ public:
         ChangeSign->setGeometry(QRect(150, 270, 61, 53));
         sizePolicy.setHeightForWidth(ChangeSign->sizePolicy().hasHeightForWidth());
         ChangeSign->setSizePolicy(sizePolicy);
-        ChangeSign->setFont(font1);
+        ChangeSign->setFont(font2);
         ChangeSign->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #808080;\n"
+"    background-color: #60b8d6;\n"
+"	color: #1f2430;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #696969;\n"
+"	color:#1f2430;\n"
+"    background-color: #65bddb;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -282,15 +314,17 @@ public:
         Add->setGeometry(QRect(220, 206, 61, 53));
         sizePolicy.setHeightForWidth(Add->sizePolicy().hasHeightForWidth());
         Add->setSizePolicy(sizePolicy);
-        Add->setFont(font1);
+        Add->setFont(font2);
         Add->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #A0522D;\n"
+"	color: #1f2430;\n"
+"    background-color: #f08778;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #A52A2A;\n"
+"	color: #1f2430;\n"
+"    background-color: #f58c7d;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -299,15 +333,17 @@ public:
         Multiply->setGeometry(QRect(220, 143, 61, 53));
         sizePolicy.setHeightForWidth(Multiply->sizePolicy().hasHeightForWidth());
         Multiply->setSizePolicy(sizePolicy);
-        Multiply->setFont(font1);
+        Multiply->setFont(font2);
         Multiply->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #A0522D;\n"
+"	color: #1f2430;\n"
+"    background-color: #f08778;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #A52A2A;\n"
+"	color: #1f2430;\n"
+"    background-color: #f58c7d;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -316,15 +352,17 @@ public:
         Divide->setGeometry(QRect(220, 79, 61, 53));
         sizePolicy.setHeightForWidth(Divide->sizePolicy().hasHeightForWidth());
         Divide->setSizePolicy(sizePolicy);
-        Divide->setFont(font1);
+        Divide->setFont(font2);
         Divide->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #A0522D;\n"
+"	color: #1f2430;\n"
+"    background-color: #f08778;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #A52A2A;\n"
+"	color: #1f2430;\n"
+"    background-color: #f58c7d;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -333,15 +371,17 @@ public:
         Subtract->setGeometry(QRect(220, 270, 61, 53));
         sizePolicy.setHeightForWidth(Subtract->sizePolicy().hasHeightForWidth());
         Subtract->setSizePolicy(sizePolicy);
-        Subtract->setFont(font1);
+        Subtract->setFont(font2);
         Subtract->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #A0522D;\n"
+"	color: #1f2430;\n"
+"    background-color: #f08778;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #A52A2A;\n"
+"	color: #1f2430;\n"
+"    background-color: #f58c7d;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
@@ -350,15 +390,17 @@ public:
         Equals->setGeometry(QRect(220, 10, 61, 61));
         sizePolicy.setHeightForWidth(Equals->sizePolicy().hasHeightForWidth());
         Equals->setSizePolicy(sizePolicy);
-        Equals->setFont(font1);
+        Equals->setFont(font2);
         Equals->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #A0522D;\n"
+"	color: #1f2430;\n"
+"    background-color: #f08778;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: #A52A2A;\n"
+"	color: #1f2430;\n"
+"    background-color: #f58c7d;\n"
 "    horder: 1px solid gray;\n"
 "    padding: 5px;\n"
 "}"));
